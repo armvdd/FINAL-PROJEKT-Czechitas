@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+
+.header {
+  min-height: 100px;
+  margin: 15px auto;
+  width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  height: 80px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #76797C;
+  font-weight: 700;
+  padding: 100% 20px;
+}
+.menu a:hover {
+  background-color: #BCD338;
+  color: #ffffff;
+}
+
+.menu__tab {
+  display: inline-block;
+}
+
+.slideGallery {
+  height: 750px;
+  background: linear-gradient(45deg, rgba(20, 20, 20, 0.473), rgba(20, 20, 20, 0.425)), url("/images/garden-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.slideGallery__poptavka {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  text-decoration: none;
+  border-radius: 35px;
+  background-color: #76797C;
+  color: #cccccc;
+  padding: 25px 50px;
+  font-size: 20px;
+  box-shadow: 1px 5px 23px #000000;
+}
+.slideGallery__poptavka:hover {
+  padding: 30px 55px;
+  border-radius: 50px;
+  font-size: 25px;
+}
+
+.promo {
+  padding-top: 40px;
+  height: 750px;
+  width: 100%;
+  background-color: #cfcdcd;
+}
+
+.promo__cards {
+  margin: 15px auto;
+  width: 1600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+}
+
+.instaIcon, .fbIcon {
+  width: 80px;
+  margin-right: 15px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px 35px;
+}
+
+.promo__oFirme {
+  grid-column: 1;
+  grid-row: 1/-1;
+  height: 640px;
+  width: 480px;
+  margin-left: 200px;
+  box-shadow: 2px 5px 35px #5f5f5f;
+  font-size: 20px;
+}
+.promo__oFirme p {
+  margin-bottom: 15px;
+}
+
+.mainH {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.promo__kontakty {
+  grid-column: 2;
+  grid-row: 1;
+  width: 470px;
+  height: 290px;
+  box-shadow: 2px 5px 35px #5f5f5f;
+}
+
+.promo__kontakty__h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 70px;
+}
+
+.promo__social {
+  grid-column: 2;
+  grid-row: 2;
+  width: 470px;
+  height: 290px;
+  box-shadow: 1px 5px 35px #5f5f5f;
+}
+
+.promo__social__h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 70px;
+}
+
+.footer {
+  height: 100px;
+  width: 100%;
+  padding: 45px 0 0 0;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
