@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>{title}</title>
+</head>
+<body>
+    <div class = "web">
+        <header class = "header">
+            <img src="/images/algarde_barva.png" alt="ALgarde logo" class = "logo-img">
+            <ul class = "menu">
+                <li class = "menu__tab menu__home"><a href = "#" class = "menu__home__a">HOME</a></li>
+                <li class = "menu__tab menu__produkty"><a href = "#" class = "menu__produkty__a">PRODUKTY</a></li>
+                <li class = "menu__tab menu__cenik"><a href = "#" class = "menu__cenik__a">CENÍK</a></li>
+                <li class = "menu__tab menu__kontakty"><a href = "#" class = "menu__kontakty__a">KONTAKTY</a></li>
+            </ul>
+        </header>
+
+        <!-- obsah -->
+        {{content | safe}}
+        <!-- obsah -->
+        
+        <footer class = "footer">
+            <p>© ALgarde s.r.o.</p>
+            <p>aluminium systems</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
