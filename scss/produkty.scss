@@ -5,23 +5,141 @@ $detailBtn-bgcolor: #76797C;
 $detailBtn-fontColor: #cccccc;
 $detailBtnHover-bgcolor: #345000;
 
+/* mobil */
+body{
+    font-size: 16px;
+    box-sizing: border-box;
+}
 
-
-/* PC */
-
-.produkty {
-  margin-top: 150px;
-  background-color: $default-bgColor;
+.produkty{
+    margin-top: 80px;
+    background-color: $default-bgColor;
 }
 
 .produkty-h1 {
-  text-transform: uppercase;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+.produkty-logo{
+    display: none;
+}
+
+.produkty-seznam{
+    width: 100%;
+    margin: 30px auto;
+}
+
+.light-card, .classic-card, .pristresky-card, .pricky-card{
+    background-color: $detail-bgColor;
+    margin-bottom: 3px;
+    padding: 2px;
+    h2{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+.cardHref {
+    text-decoration: none;
+    color: $default-fontColor;
+  }
+
+.produkty-detail{
+    margin-top: 80px;
+  }
+
+.produkty-detail__card{
+    margin-bottom: 15px;
+}
+
+.produkty-detail__img{
+      width: 100%;
+  }
+
+.produkty-detail__card__text{
+    padding: 7px 15px 15px;
+
+    h3{
+        margin-bottom: 10px;
+    }
+}
+
+.classic-detail__text, .pricky-detail__text{
+    background-color: $detail-bgColor;
+}
+
+.detailBtn{
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 15px;
+    background-color: $detailBtn-bgcolor;
+    color: $detailBtn-fontColor;
+    padding: 4px 10px;
+    border-radius: 7px;
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px){
+
+    .produkty-detail__card{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+
+    .produkty-detail__img{
+        width: 450px;
+    }
+
+    .classic-detail__text, .pricky-detail__text{
+        text-align: right;
+        order: 1;
+        background-color: $default-bgColor;
+        padding-left: 25px;
+    }
+    
+    .classic-img, .pricky-img{
+        order: 2;
+        margin-left: 15px;
+    }
+
+    .light-img, .pristresky-img{
+        margin-right: 15px;
+    }
+
+    .light-detail__text, .pristresky-detail__text{
+        padding-right: 25px;
+    }
+
+    .footer{
+        border-top: 2px solid $detail-bgColor;
+        padding: 15px;
+        margin-top: 65px;
+    }
+}
+
+/* PC */
+
+@media screen and (min-width: 1200px){
+
+.produkty {
+  margin-top: 150px;
+}
+
+.produkty-h1 {
   font-size: 25px;
-  text-align: center;
   margin-left: 40px;
 }
 
 .produkty-logo {
+  display: block;
   width: 250px;
   &:hover {
     width: 253px;
@@ -37,37 +155,13 @@ $detailBtnHover-bgcolor: #345000;
   gap: 5px;
 }
 
-.light-card {
+.light-card, .classic-card, .pristresky-card, .pricky-card {
+    background-color: $default-bgColor;
+    padding: 0;
+    margin-bottom: 0;
   h2 {
     font-size: 18px;
-    text-align: center;
   }
-}
-
-.classic-card {
-  h2 {
-    font-size: 18px;
-    text-align: center;
-  }
-}
-
-.pristresky-card {
-  h2 {
-    font-size: 16px;
-    text-align: center;
-  }
-}
-
-.pricky-card {
-  h2 {
-    font-size: 18px;
-    text-align: center;
-  }
-}
-
-.cardHref {
-  text-decoration: none;
-  color: $default-fontColor;
 }
 
 .produkty-detail{
@@ -94,7 +188,8 @@ $detailBtnHover-bgcolor: #345000;
 }
 
 .produkty-detail__card__text{
-    flex: 0 1 450px
+    flex: 0 1 450px;
+    padding: 0;
 }
 
 .light-detail, .pristresky-detail{
@@ -104,16 +199,16 @@ $detailBtnHover-bgcolor: #345000;
 
 .classic-detail__text, .pricky-detail__text{
     text-align: right;
+    order: 1;
+    background-color: $default-bgColor;
+}
+
+.classic-img, .pricky-img{
+    order: 2;
 }
 
 .detailBtn{
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 40%;
-    margin-right: 40%;
     margin-top: 15px;
-    background-color: $detailBtn-bgcolor;
-    color: $detailBtn-fontColor;
     padding: 7px 15px;
     border-radius: 10px;
 
@@ -124,4 +219,5 @@ $detailBtnHover-bgcolor: #345000;
 
 .footer{
     border-top: 2px solid $detail-bgColor;
+}
 }
