@@ -1,11 +1,13 @@
 $cena-fontColor: #76797C;
 $cenik-afterElementColor: #000000;
-$footerBorder-color: #76797C;
+$footerBorder-color: #cccccc;
+$cenikSection-bgColor: #e7e7e7;
 
 /* mobile frst */
 
 .cenik-section {
-  margin: 20px 0 40px 0;;
+  padding: 20px 0;
+  background-color: $cenikSection-bgColor;
 }
 
 .cenik-h1 {
@@ -43,7 +45,7 @@ $footerBorder-color: #76797C;
      }
 
      .cenik-section{
-         margin: 45px 0 150px 0;
+         padding: 40px 0 150px 0;
      }
 
      .cenik{
@@ -73,9 +75,6 @@ $footerBorder-color: #76797C;
 
 /* PC */
 @media screen and (min-width: 1200px) {
-    .cenik-section{
-        margin: 55px 0 250px 0;
-    }
 
     .cenik-h1{
         margin-bottom: 55px;

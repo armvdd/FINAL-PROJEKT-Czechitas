@@ -1,6 +1,7 @@
 /* mobile frst */
 .cenik-section {
-  margin: 20px 0 40px 0;
+  padding: 20px 0;
+  background-color: #e7e7e7;
 }
 
 .cenik-h1 {
@@ -28,7 +29,7 @@
 }
 
 .footer {
-  border-top: 1px solid #76797C;
+  border-top: 1px solid #cccccc;
 }
 
 /* tablet */
@@ -38,7 +39,7 @@
   }
 
   .cenik-section {
-    margin: 45px 0 150px 0;
+    padding: 40px 0 150px 0;
   }
 
   .cenik {
@@ -67,10 +68,6 @@
 }
 /* PC */
 @media screen and (min-width: 1200px) {
-  .cenik-section {
-    margin: 55px 0 250px 0;
-  }
-
   .cenik-h1 {
     margin-bottom: 55px;
   }

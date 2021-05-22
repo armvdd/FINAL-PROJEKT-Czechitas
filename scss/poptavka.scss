@@ -4,12 +4,14 @@ $PC-btnBgColor: #e7e7e7;
 $PC-btnFontColor: #76797C;
 $PC-btnHoverBgColor: #345000;
 $PC-btnHoverFontColor: #e7e7e7;
+$formularSection-bgColor: #e7e7e7;
+$footerBorder-color: #cccccc;
 
 /* mobile frst */
 
 .formular-section{
-    margin: 15px auto 0 auto;
-    background-color: #e7e7e7;
+    margin: 0 auto;
+    background-color: $formularSection-bgColor;
     padding: 10px 0;
 }
 
@@ -41,7 +43,7 @@ $PC-btnHoverFontColor: #e7e7e7;
 }
 
 .footer{
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid $footerBorder-color;
 }
 
 /* > 420px */
@@ -77,7 +79,6 @@ $PC-btnHoverFontColor: #e7e7e7;
 
 @media screen and (min-width: 900px){
     .formular-section{
-        margin-top: 50px;
         padding: 25px 0;
     }
 
