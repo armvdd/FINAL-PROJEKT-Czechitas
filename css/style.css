@@ -28,6 +28,10 @@ body {
   display: none;
 }
 
+.HamMenu-img {
+  width: 30px;
+}
+
 .menu__toggler {
   position: absolute;
   right: 15px;
@@ -60,7 +64,7 @@ body {
   margin-top: 25px;
   position: relative;
   top: -15px;
-  right: 50px;
+  right: 60px;
 }
 
 .slideGallery {
