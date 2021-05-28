@@ -41,6 +41,8 @@
   .formular-section__forms {
     max-width: 350px;
     margin: 35px auto 0 auto;
+    border: 1px solid black;
+    padding: 10px 0;
   }
 
   .formular-h1 {
@@ -67,6 +69,10 @@
 @media screen and (min-width: 900px) {
   .formular-section {
     padding: 25px 0;
+  }
+
+  .formular-section__forms {
+    padding: 25px 50px;
   }
 
   .formular-h1 {
