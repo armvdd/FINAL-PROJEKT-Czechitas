@@ -1,371 +1,374 @@
 $default-headersFont: "Fjalla One", sans-serif;
 $default-textFont: "Titillium Web", sans-serif;
-$default-fontColor: #76797C;
+$default-fontColor: #76797c;
 $main-bgColor: #ffffff;
-$second-bgColor: #BCD338;
+$second-bgColor: #bcd338;
 $hoverMenu-color: #ffffff;
 $buttonFontColor: #cccccc;
-$buttonDefault-bgcolor: #76797C;
+$buttonDefault-bgcolor: #76797c;
 $buttonHover-bgColor: #345000;
 $promo-bgColor: #e7e7e7;
-$headerAfterElementColor: #BCD338;
+$headerAfterElementColor: #bcd338;
+$HamMenu-bgColor: #e7e7e7;
 
 /* mobile first */
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: $default-textFont;
-    font-size: 16px;
-    box-sizing: border-box;
+body {
+  font-family: $default-textFont;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
-.header{
-    min-height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header {
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo-img{
-    height: 50px;
-    left: 10px;
-    top: 10px;
-    position: absolute;
+.logo-img {
+  height: 50px;
+  padding-left: 15px;
 }
 
-.menu{
-    display: none;
+.menu {
+  display: none;
 }
 
-.HamMenu-img{
-    width: 30px;
+.HamMenu{
+  background-color: $HamMenu-bgColor;
 }
 
-.menu__toggler{
-    position: absolute;
-    right: 15px;
-    top: 15px;
+.HamMenu-img {
+  width: 30px;
 }
 
-.menu__checkbox{
-    position: absolute;
-    left: -9999px;
+.menu__toggler {
+  position: absolute;
+  right: 15px;
+  top: 15px;
 }
 
-.menu__list{
-    list-style: none;
-    display: none;
+.menu__checkbox {
+  position: absolute;
+  left: -9999px;
 }
 
-.menu__item{
-    padding: 2px;
+.menu__list {
+  list-style: none;
+  display: none;
+  width: 50%;
+  margin: 0 auto;
+  padding: 5px 0;
+  text-align: center;
 }
 
-.menu__link{
-    text-decoration: none;
+.menu__item {
+  padding: 4px;
+  border-bottom: 1px solid white;
+}
+
+.menu__link {
+  text-decoration: none;
+  display: block;
+  color: $default-fontColor;
+  font-weight: 400;
+}
+
+.menu__checkbox:checked ~ .menu__list {
+  display: block;
+}
+
+.slideGallery {
+  height: 350px;
+  background: linear-gradient(
+      45deg,
+      rgba(20, 20, 20, 0.473),
+      rgba(20, 20, 20, 0.425)
+    ),
+    url("/images/garden-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.slideGallery__poptavka {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  text-decoration: none;
+  border-radius: 35px;
+  background-color: $buttonDefault-bgcolor;
+  color: $buttonFontColor;
+  padding: 15px 20px;
+  font-size: 16px;
+  box-shadow: 1px 5px 23px #000000;
+
+  &:hover {
+    padding: 16px 21px;
+    border-radius: 50px;
+    background-color: $buttonHover-bgColor;
+  }
+}
+
+.promo {
+  min-height: 500px;
+}
+
+.instaIcon,
+.fbIcon {
+  width: 50px;
+  margin-right: 15px;
+}
+
+.card {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+}
+
+.promo__oFirme {
+  min-height: 150px;
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+.mainH {
+  font-family: $default-headersFont;
+  font-size: 25px;
+
+  &::after {
+    content: "";
     display: block;
-    color: $default-fontColor;
-    font-weight: 400;
-}
-
-.menu__checkbox:checked ~ .menu__list{
-    display: block;
-    margin-top: 25px;
-    position: relative;
-    top: -15px;
-    right: 60px;
-}
-
-.slideGallery{
-    height: 350px;
-    background: linear-gradient(45deg, rgba(20, 20, 20, 0.473), rgba(20, 20, 20, 0.425)), url("/images/garden-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.slideGallery__poptavka{
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    text-decoration: none;
-    border-radius: 35px;
-    background-color: $buttonDefault-bgcolor;
-    color: $buttonFontColor;
-    padding: 15px 20px;
-    font-size: 16px;
-    box-shadow: 1px 5px 23px #000000;
-
-    &:hover{
-        padding: 16px 21px;
-        border-radius: 50px;
-        background-color: $buttonHover-bgColor;
-    }
-}
-
-.promo{
-    min-height: 500px;
-}
-
-.instaIcon, .fbIcon{
+    background-color: $headerAfterElementColor;
     width: 50px;
-    margin-right: 15px;
-}
-
-.card{
-    margin-bottom: 15px;
-    padding: 10px 15px;
-}
-
-.promo__oFirme{
-    min-height: 150px;
-
-    p{
-        margin-top: 10px;
-    }
-}
-
-.mainH{
-    font-family: $default-headersFont;
-    font-size: 25px;
-
-    &::after{
-    content: "";
-	display: block;
-	background-color: $headerAfterElementColor;
-	width: 50px;
-	height: 3px;
+    height: 3px;
     margin-top: 5px;
-    }
+  }
 }
 
-.promo__kontakty{
-    min-height: 250px;
-    background-color: $promo-bgColor;
+.promo__kontakty {
+  min-height: 250px;
+  background-color: $promo-bgColor;
 }
 
-.promo__kontakty__h2{
-    font-weight: 700;
-    margin-bottom: 70px;
+.promo__kontakty__h2 {
+  font-weight: 700;
+  margin-bottom: 70px;
 
-    &::after{
+  &::after {
     content: "";
-	display: block;
-	background-color: $headerAfterElementColor;
-	width: 50px;
-	height: 2.5px;
+    display: block;
+    background-color: $headerAfterElementColor;
+    width: 50px;
+    height: 2.5px;
     margin-top: 5px;
-    }
+  }
 }
 
-.promo__social{
-    min-height: 250px;
-    border-bottom: $promo-bgColor solid 2px;
-    text-align: right;
+.promo__social {
+  min-height: 250px;
+  border-bottom: $promo-bgColor solid 2px;
+  text-align: right;
 }
 
-.promo__social__h2{
-    font-weight: 700;
-    margin-bottom: 70px;
-    position: relative;
+.promo__social__h2 {
+  font-weight: 700;
+  margin-bottom: 70px;
+  position: relative;
 
-    &::after{
-        content: "";
-        display: block;
-        background-color: $headerAfterElementColor;
-        width: 50px;
-        height: 2.5px;
-        margin-top: 5px;
-        position: absolute;
-        right: 115px;
-        }
+  &::after {
+    content: "";
+    display: block;
+    background-color: $headerAfterElementColor;
+    width: 50px;
+    height: 2.5px;
+    margin-top: 5px;
+    position: absolute;
+    right: 115px;
+  }
 }
 
-.footer{
-    height: 50px;
-    width: 100%;
-    padding: 5px 0;
-    text-align: center;
+.footer {
+  height: 50px;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
 }
-
 
 /* tablet */
 
-@media screen and (min-width: 768px){
-    header{
-        height: 100px;
+@media screen and (min-width: 768px) {
+  header {
+    height: 100px;
+  }
+
+  .HamMenu {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    margin-right: 25px;
+    a {
+      text-decoration: none;
+      color: $default-fontColor;
+      font-weight: 700;
     }
+  }
 
-    .HamMenu{
-        display: none;
-    }
+  .menu__tab {
+    display: inline-block;
+    margin-left: 25px;
+  }
 
-    .menu{
-        display: block;
-        margin-right: 25px;
-            a{
-                text-decoration: none;
-                color: $default-fontColor;
-                font-weight: 700;
-            }
-        }
-        
-        .menu__tab{
-            display: inline-block;
-            margin-left: 25px;
-        }
+  .logo-img {
+    height: 65px;
+    margin-left: 15px;
+  }
 
+  .slideGallery {
+    height: 450px;
+  }
 
-    .logo-img{
-        height: 65px;
-        margin-left: 15px;
-    }
+  .slideGallery__poptavka {
+    left: 42%;
+  }
 
-    .slideGallery{
-        height: 450px;
-    }
+  .promo {
+    min-height: 600px;
+  }
 
-    .slideGallery__poptavka{
-        left: 42%;
-    }
+  .promo__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 250px;
+  }
 
-    .promo{
-        min-height: 600px;
-    }
+  .promo__oFirme {
+    padding: 20px 50px 10px 15px;
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
 
-    .promo__cards{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 300px 250px;
-    }
+  .mainH {
+    margin-bottom: 25px;
+  }
 
-    .promo__oFirme{
-        padding: 20px 50px 10px 15px;
-        grid-column: 1 / -1;
-        grid-row: 1;
-    }
+  .promo__kontakty {
+    grid-column: 1;
+    grid-row: 2;
+    padding-left: 25%;
+    height: 250px;
+    padding-top: 20px;
+  }
 
-    .mainH{
-        margin-bottom: 25px;
-    }
+  .promo__social {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: $promo-bgColor;
+    height: 250px;
+    padding-left: 25%;
+    padding-top: 20px;
+    border: none;
+    text-align: left;
+    position: static;
+  }
 
-    .promo__kontakty{
-        grid-column: 1;
-        grid-row: 2;
-        padding-left: 25%;
-        height: 250px;
-        padding-top: 20px;
-    }
+  .promo__social__h2::after {
+    position: static;
+  }
 
-    .promo__social{
-        grid-column: 2;
-        grid-row: 2;
-        background-color: $promo-bgColor;
-        height: 250px;
-        padding-left: 25%;
-        padding-top: 20px;
-        border: none;
-        text-align: left;
-        position: static;
-    }
-
-    .promo__social__h2::after{
-        position: static;
-    }
-
-    .footer{
-        height: 50px;
-    }
+  .footer {
+    height: 50px;
+  }
 }
-
 
 /* PC */
 
-@media screen and (min-width: 1200px){
-
-
-
-body{
+@media screen and (min-width: 1200px) {
+  body {
     font-size: 18px;
-}
+  }
 
-.header{
+  .header {
     height: 100px;
-}
+  }
 
-.logo-img{
+  .logo-img {
     height: 80px;
     margin-left: 25px;
-}
+  }
 
-.menu{
+  .menu {
+    a {
+      text-decoration: none;
+      color: $default-fontColor;
+      font-weight: 700;
+      padding: 38px 20px;
 
-    a{
-        text-decoration: none;
-        color: $default-fontColor;
-        font-weight: 700;
-        padding: 38px 20px;
-
-        &:hover{
-            background-color: $second-bgColor;
-            color: $hoverMenu-color;
-        }
+      &:hover {
+        background-color: $second-bgColor;
+        color: $hoverMenu-color;
+      }
     }
-}
+  }
 
-.menu__tab{
+  .menu__tab {
     display: inline-block;
-}
+  }
 
-.slideGallery{
+  .slideGallery {
     height: 750px;
-}
+  }
 
-.slideGallery__poptavka{
+  .slideGallery__poptavka {
     top: 50%;
     left: 45%;
     padding: 25px 50px;
     font-size: 20px;
 
-    &:hover{
-        padding: 26px 51px;
+    &:hover {
+      padding: 26px 51px;
     }
-}
+  }
 
-.promo {
+  .promo {
     padding-top: 40px;
     height: 750px;
     width: 100%;
     background-color: $promo-bgColor;
-    
-}
+  }
 
-.promo__cards{
+  .promo__cards {
     margin: 15px auto;
     max-width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 350px);
     gap: 15px;
-}
+  }
 
-.instaIcon, .fbIcon{
+  .instaIcon,
+  .fbIcon {
     width: 80px;
     margin-right: 15px;
-}
+  }
 
-.card{
+  .card {
     background-color: $main-bgColor;
     border-radius: 5px;
     padding: 20px 35px;
-}
+  }
 
-.promo__oFirme{
+  .promo__oFirme {
     grid-column: 1;
     grid-row: 1/-1;
     height: 640px;
@@ -374,43 +377,42 @@ body{
     margin-bottom: 0;
     box-shadow: 2px 5px 35px #5f5f5f;
 
-    p{
-        margin-bottom: 15px;
+    p {
+      margin-bottom: 15px;
     }
-}
+  }
 
-.mainH{
+  .mainH {
     font-size: 35px;
     margin-bottom: 55px;
 
-    &::after{
-	height: 4px;
-}
-}
+    &::after {
+      height: 4px;
+    }
+  }
 
-
-.promo__kontakty{
+  .promo__kontakty {
     grid-column: 2;
     grid-row: 1;
     max-width: 470px;
     height: 290px;
     box-shadow: 2px 5px 35px #5f5f5f;
     margin-bottom: 0;
-}
+  }
 
-.promo__kontakty__h2{
+  .promo__kontakty__h2 {
     font-size: 25px;
 
-    &::after{
-	height: 3px;
+    &::after {
+      height: 3px;
     }
-}
+  }
 
-.promo__kontakty__adresa{
+  .promo__kontakty__adresa {
     margin-bottom: 20px;
-}
+  }
 
-.promo__social{
+  .promo__social {
     grid-column: 2;
     grid-row: 2;
     max-width: 470px;
@@ -418,21 +420,20 @@ body{
     box-shadow: 1px 5px 35px #5f5f5f;
     margin-bottom: 0;
     margin-top: -15px;
-}
+  }
 
-.promo__social__h2{
+  .promo__social__h2 {
     font-size: 25px;
 
-    &::after{
-        height: 3px;
-        }
-}
+    &::after {
+      height: 3px;
+    }
+  }
 
-.footer{
+  .footer {
     height: 40px;
     width: 100%;
     padding: 25px 0;
     text-align: center;
-}
-
-};
+  }
+} ;
