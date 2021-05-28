@@ -61,6 +61,14 @@
     flex: 1 1 20%;
     padding-left: 25%;
   }
+  .popis::after {
+    content: "";
+    display: block;
+    background-color: #ffffff;
+    height: 2px;
+    width: 15%;
+    margin-top: 7px;
+  }
 
   .cena {
     flex: 1 1 20%;
