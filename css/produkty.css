@@ -19,6 +19,14 @@ body {
   text-align: center;
   margin-bottom: 5px;
 }
+.produkty-h1::after {
+  content: "";
+  display: block;
+  background-color: #bcd338;
+  width: 25px;
+  height: 2px;
+  margin: 0 auto;
+}
 
 .produkty-logo {
   display: none;
@@ -127,6 +135,11 @@ body {
   .produkty-h1 {
     font-size: 27px;
     margin-left: 40px;
+  }
+  .produkty-h1::after {
+    width: 30px;
+    height: 3px;
+    margin: 0 auto;
   }
 
   .produkty-logo {

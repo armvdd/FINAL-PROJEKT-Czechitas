@@ -4,6 +4,7 @@ $detail-bgColor: #E7E7E7;
 $detailBtn-bgcolor: #76797C;
 $detailBtn-fontColor: #cccccc;
 $detailBtnHover-bgcolor: #345000;
+$headerAfterElementColor: #bcd338;
 
 /* mobil */
 body{
@@ -17,7 +18,7 @@ body{
 
 .produkty{
     margin-top: 80px;
-    background-color: $default-bgColor;
+    background-color: $default-bgColor;  
 }
 
 .produkty-h1 {
@@ -25,6 +26,15 @@ body{
     font-size: 20px;
     text-align: center;
     margin-bottom: 5px;
+
+    &::after {
+        content: "";
+        display: block;
+        background-color: $headerAfterElementColor;
+        width: 25px;
+        height: 2px;
+        margin: 0 auto;
+      }
   }
 
 .produkty-logo{
@@ -140,11 +150,18 @@ body{
 .produkty-h1 {
   font-size: 27px;
   margin-left: 40px;
+
+  &::after {
+    width: 30px;
+    height: 3px;
+    margin: 0 auto;
+  }
 }
 
 .produkty-logo {
   display: block;
   width: 250px;
+  
   &:hover {
     width: 253px;
   }

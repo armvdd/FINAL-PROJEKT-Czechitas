@@ -6,9 +6,16 @@
 }
 
 .formular-h1 {
-  text-align: center;
-  margin-bottom: 15px;
   font-size: 23px;
+  text-align: center;
+}
+.formular-h1::after {
+  content: "";
+  display: block;
+  background-color: #bcd338;
+  width: 25px;
+  height: 2px;
+  margin: 0 auto;
 }
 
 .formField {
@@ -52,10 +59,7 @@
   }
 
   .formular-h1 {
-    max-width: 300px;
     font-size: 25px;
-    text-align: left;
-    margin: 0 auto;
   }
 
   .formular-section {
@@ -84,6 +88,10 @@
   .formular-h1 {
     font-size: 27px;
   }
+  .formular-h1::after {
+    width: 30px;
+    height: 3px;
+  }
 
   .formField {
     margin-bottom: 35px;
@@ -91,7 +99,7 @@
 
   .formular-btn {
     background-color: #e7e7e7;
-    color: #76797C;
+    color: #76797c;
     cursor: pointer;
     font-size: 18px;
   }

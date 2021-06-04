@@ -1,118 +1,129 @@
 $mobilefrst-btnBgColor: #345000;
 $mobilefrst-btnFontColor: #e7e7e7;
 $PC-btnBgColor: #e7e7e7;
-$PC-btnFontColor: #76797C;
+$PC-btnFontColor: #76797c;
 $PC-btnHoverBgColor: #345000;
 $PC-btnHoverFontColor: #e7e7e7;
 $formularSection-bgColor: #e7e7e7;
 $footerBorder-color: #cccccc;
 $spanStar-color: rgb(206, 6, 6);
+$headerAfterElementColor: #bcd338;
 
 /* mobile frst */
 
-.formular-section{
-    margin: 0 auto;
-    background-color: $formularSection-bgColor;
-    padding: 10px 0;
+.formular-section {
+  margin: 0 auto;
+  background-color: $formularSection-bgColor;
+  padding: 10px 0;
 }
 
 .formular-h1 {
-  text-align: center;
-  margin-bottom: 15px;
   font-size: 23px;
-}
+  text-align: center;
 
-.formField{
-    margin: 0 15px 15px 25px;
-}
-
-.formField__label{
+  &::after {
+    content: "";
     display: block;
+    background-color: $headerAfterElementColor;
+    width: 25px;
+    height: 2px;
+    margin: 0 auto;
+  }
 }
 
-.formField__input{
-    font-size: 14px;
-    width: 100%;
-    margin-right: 15px;
+.formField {
+  margin: 0 15px 15px 25px;
 }
 
-.formular-btn{
-    margin: 0 15px 35px 25px;
-    padding: 5px;
-    font-size: 14px;
-    border-radius: 15px;
-    background-color:$mobilefrst-btnBgColor;
-    color: $mobilefrst-btnFontColor;
+.formField__label {
+  display: block;
 }
 
-.span-star{
-    color: $spanStar-color;
+.formField__input {
+  font-size: 14px;
+  width: 100%;
+  margin-right: 15px;
 }
 
-.footer{
-    border-top: 1px solid $footerBorder-color;
+.formular-btn {
+  margin: 0 15px 35px 25px;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 15px;
+  background-color: $mobilefrst-btnBgColor;
+  color: $mobilefrst-btnFontColor;
+}
+
+.span-star {
+  color: $spanStar-color;
+}
+
+.footer {
+  border-top: 1px solid $footerBorder-color;
 }
 
 /* > 420px */
 
-@media screen and (min-width: 420px){
-    .formular-section__forms{
-        max-width: 350px;
-        margin: 35px auto 0 auto;
-        border: 1px solid black;
-        padding: 10px 0;
-    }
+@media screen and (min-width: 420px) {
+  .formular-section__forms {
+    max-width: 350px;
+    margin: 35px auto 0 auto;
+    border: 1px solid black;
+    padding: 10px 0;
+  }
 
-    .formular-h1{
-        max-width: 300px;
-        font-size: 25px;
-        text-align: left;
-        margin: 0 auto;
-    }
+  .formular-h1 {
+    font-size: 25px;
+  }
 
-    .formular-section{
-        font-size: 18px;
-        padding: 20px 0;
-    }
+  .formular-section {
+    font-size: 18px;
+    padding: 20px 0;
+  }
 
-    .formField__input{
-        font-size: 16px;
-    }
+  .formField__input {
+    font-size: 16px;
+  }
 
-    .formular-btn{
-        padding: 8px;
-    }
+  .formular-btn {
+    padding: 8px;
+  }
 }
 
 /* PC */
 
-@media screen and (min-width: 900px){
-    .formular-section{
-        padding: 25px 0;
-    }
+@media screen and (min-width: 900px) {
+  .formular-section {
+    padding: 25px 0;
+  }
 
-    .formular-section__forms{
-        padding: 25px 50px;
-    }
+  .formular-section__forms {
+    padding: 25px 50px;
+  }
 
-    .formular-h1{
-        font-size: 27px;
-    }
+  .formular-h1 {
+    font-size: 27px;
 
-    .formField{
-        margin-bottom: 35px;
+     &::after {
+      width: 30px;
+      height: 3px;
     }
+  }
 
-    .formular-btn{
-        background-color: $PC-btnBgColor;
-        color: $PC-btnFontColor;
-        cursor: pointer;
-        font-size: 18px;
+  .formField {
+    margin-bottom: 35px;
+  }
 
-        &:hover{
-            background-color: $PC-btnHoverBgColor;
-            color: $PC-btnHoverFontColor;
-            border-radius: 20px;
-        }
+  .formular-btn {
+    background-color: $PC-btnBgColor;
+    color: $PC-btnFontColor;
+    cursor: pointer;
+    font-size: 18px;
+
+    &:hover {
+      background-color: $PC-btnHoverBgColor;
+      color: $PC-btnHoverFontColor;
+      border-radius: 20px;
     }
+  }
 }
