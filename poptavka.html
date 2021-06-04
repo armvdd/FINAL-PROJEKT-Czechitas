@@ -8,59 +8,92 @@ title: ALgarde s.r.o. - Poptávka
 <div class="formular-section">
   <h1 class="formular-h1">POPTÁVKA:</h1>
 
-  <div class = "formular-section__forms">
-  <form method="post" action="https://submit-form.com/51qpicIJ" class="poptavka-formular">
+  <div class="formular-section__forms">
+    <form
+      method="post"
+      action="https://submit-form.com/51qpicIJ"
+      class="poptavka-formular"
+    >
+      <div class="formField poptavka-formular__jmeno">
+        <label for="jmeno-input" class="formField__label jmeno-label">
+          jméno *:</label
+        >
+        <input type="text" id="jmeno-input" class="formField__input" required />
+      </div>
 
-    <div class = "formField poptavka-formular__jmeno">
-    <label for="jmeno-input" class="formField__label jmeno-label">
-      jméno *:</label>
-    <input type="text" id="jmeno-input" class = "formField__input" required />
-    </div>
+      <div class="formField poptavka-formular__prijmeni">
+        <label for="prijmeni-input" class="formField__label prijmeni-label">
+          příjmení *:</label
+        >
+        <input
+          type="text"
+          id="prijmeni-input"
+          class="formField__input"
+          required
+        />
+      </div>
 
-    <div class = "formField poptavka-formular__prijmeni">
-    <label for="prijmeni-input" class = "formField__label prijmeni-label"> příjmení *:</label>
-    <input type="text" id="prijmeni-input" class = "formField__input" required />
-    </div>
+      <div class="formField poptavka-formular__tel">
+        <label for="tel-input" class="formField__label tel-label"> tel.:</label>
+        <input type="number" id="tel-input" class="formField__input" />
+      </div>
 
-    <div class = "formField poptavka-formular__tel">
-    <label for="tel-input" class = "formField__label tel-label"> tel:</label>
-    <input type="tel" id="tel-input" class = "formField__input"/>
-    </div>
+      <div class="formField poptavka-formular__email">
+        <label for="email-input" class="formField__label poptavka-label">
+          e-mail *:</label
+        >
+        <input
+          type="email"
+          id="email-input"
+          placeholder="@"
+          class="formField__input"
+          required
+        />
+      </div>
 
-    <div class = "formField poptavka-formular__email">
-    <label for="email-input" class = "formField__label poptavka-label"> email *:</label>
-    <input type="email" id="email-input" placeholder="@" class = "formField__input" required />
-    </div>
+      <div class="formField poptavka-formular__adresa">
+        <label for="adresa-input" class="formField__label adresa-label">
+          adresa:</label
+        >
+        <textarea
+          name="adresa"
+          id="adresa-input"
+          cols="30"
+          rows="10"
+          class="formField__input"
+        ></textarea>
+      </div>
 
-    <div class = "formField poptavka-formular__adresa">
-    <label for="adresa-input" class = "formField__label adresa-label"> adresa:</label>
-    <textarea name="adresa" id="adresa-input" cols="30" rows="10" class = "formField__input"></textarea>
-    </div>
+      <div class="formField poptavka-formular__produkty">
+        <label for="produkt-input" class="formField__label produkty-label">
+          produkt:</label
+        >
+        <select name="produkty" id="produkt-input" class="formField__input">
+          <option value="">vyberte produkt</option>
+          <option value="zahrada-light">zimní zahrada LIGHT</option>
+          <option value="zahrada-classic">zimní zahrada CLASSIC</option>
+          <option value="hlinik-strisky">hliníkové PŘÍČKY</option>
+          <option value="hlinik-pricky">hliníkové STŘÍŠKY</option>
+          <option value="jine">jiné...</option>
+        </select>
+      </div>
 
-    <div class = "formField poptavka-formular__produkty">
-    <label for="produkt-input" class = "formField__label produkty-label"> produkt:</label>
-    <select name="produkty" id="produkt-input" class = "formField__input">
-      <option value="">vyberte produkt</option>
-      <option value="zahrada-light">zimní zahrada LIGHT</option>
-      <option value="zahrada-classic">zimní zahrada CLASSIC</option>
-      <option value="hlinik-strisky">hliníkové PŘÍČKY</option>
-      <option value="hlinik-pricky">hliníkové STŘÍŠKY</option>
-      <option value="jine">jiné...</option>
-    </select>
-    </div>
+      <div class="formField poptavka-formular__zprava">
+        <label for="zprava-input" class="formField__label zprava-label">
+          zpráva:</label
+        >
+        <textarea
+          name="zprava"
+          id="zprava-input"
+          cols="30"
+          rows="10"
+          placeholder="Vaše zpráva pro nás"
+          class="formField__input"
+        >
+        </textarea>
+      </div>
 
-    <div class = "formField poptavka-formular__zprava">
-    <label for="zprava-input" class = "formField__label zprava-label"> zpráva:</label>
-    <textarea
-      name="zprava"
-      id="zprava-input"
-      cols="30"
-      rows="10"
-      placeholder="Vaše zpráva pro nás" class = "formField__input">
-    </textarea>
-    </div>
-
-    <button type="submit" class="formular-btn">odeslat</button>
-  </form>
-</div>
+      <button type="submit" class="formular-btn">odeslat</button>
+    </form>
+  </div>
 </div>

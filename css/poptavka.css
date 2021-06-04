@@ -21,6 +21,8 @@
 
 .formField__input {
   font-size: 14px;
+  width: 100%;
+  margin-right: 15px;
 }
 
 .formular-btn {
