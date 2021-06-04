@@ -6,6 +6,7 @@ $PC-btnHoverBgColor: #345000;
 $PC-btnHoverFontColor: #e7e7e7;
 $formularSection-bgColor: #e7e7e7;
 $footerBorder-color: #cccccc;
+$spanStar-color: rgb(206, 6, 6);
 
 /* mobile frst */
 
@@ -42,6 +43,10 @@ $footerBorder-color: #cccccc;
     border-radius: 15px;
     background-color:$mobilefrst-btnBgColor;
     color: $mobilefrst-btnFontColor;
+}
+
+.span-star{
+    color: $spanStar-color;
 }
 
 .footer{

@@ -6,7 +6,7 @@ title: ALgarde s.r.o. - Poptávka
 <link rel="stylesheet" href="/css/poptavka.css" />
 
 <div class="formular-section">
-  <h1 class="formular-h1">POPTÁVKA:</h1>
+  <h1 class="formular-h1">POPTÁVKA</h1>
 
   <div class="formular-section__forms">
     <form
@@ -16,14 +16,14 @@ title: ALgarde s.r.o. - Poptávka
     >
       <div class="formField poptavka-formular__jmeno">
         <label for="jmeno-input" class="formField__label jmeno-label">
-          jméno *:</label
+          jméno: <span class = "span-star">*</span></label
         >
         <input type="text" id="jmeno-input" class="formField__input" required />
       </div>
 
       <div class="formField poptavka-formular__prijmeni">
         <label for="prijmeni-input" class="formField__label prijmeni-label">
-          příjmení *:</label
+          příjmení: <span class = "span-star">*</span></label
         >
         <input
           type="text"
@@ -40,7 +40,7 @@ title: ALgarde s.r.o. - Poptávka
 
       <div class="formField poptavka-formular__email">
         <label for="email-input" class="formField__label poptavka-label">
-          e-mail *:</label
+          e-mail: <span class = "span-star">*</span></label
         >
         <input
           type="email"
@@ -66,9 +66,9 @@ title: ALgarde s.r.o. - Poptávka
 
       <div class="formField poptavka-formular__produkty">
         <label for="produkt-input" class="formField__label produkty-label">
-          produkt:</label
+          produkt:<span class = "span-star">*</span></label
         >
-        <select name="produkty" id="produkt-input" class="formField__input">
+        <select name="produkty" id="produkt-input" class="formField__input" required>
           <option value="">vyberte produkt</option>
           <option value="zahrada-light">zimní zahrada LIGHT</option>
           <option value="zahrada-classic">zimní zahrada CLASSIC</option>
@@ -94,6 +94,7 @@ title: ALgarde s.r.o. - Poptávka
       </div>
 
       <button type="submit" class="formular-btn">odeslat</button>
+      <p><span class = "span-star">*</span> Pole označená hvězdičkou jsou povinná.</p>
     </form>
   </div>
 </div>
