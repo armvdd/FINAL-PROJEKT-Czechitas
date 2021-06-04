@@ -9,6 +9,15 @@
   text-align: center;
 }
 
+.kontakty-h1::after {
+  content: "";
+  display: block;
+  background-color: #bcd338;
+  width: 25px;
+  height: 2px;
+  margin: 0 auto;
+}
+
 .mapa__mapa {
   width: 320px;
 }
@@ -86,6 +95,10 @@
     margin-bottom: 25px;
     grid-column: 1/-1;
     grid-row: 1;
+  }
+  .kontakty-h1::after {
+    width: 30px;
+    height: 3px;
   }
 
   .mapa {
