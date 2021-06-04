@@ -8,6 +8,14 @@
   text-align: center;
   margin-bottom: 20px;
 }
+.cenik-h1::after {
+  content: "";
+  display: block;
+  background-color: #bcd338;
+  width: 25px;
+  height: 2px;
+  margin: 0 auto;
+}
 
 .cenik {
   margin-bottom: 15px;
@@ -78,6 +86,10 @@
 @media screen and (min-width: 1200px) {
   .cenik-h1 {
     margin-bottom: 55px;
+  }
+  .cenik-h1::after {
+    width: 30px;
+    height: 3px;
   }
 
   .cenik {

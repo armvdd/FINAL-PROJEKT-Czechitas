@@ -3,6 +3,7 @@ $cenik-afterElementColor: #000000;
 $cenikTabletPC-afterElementColor: #ffffff;
 $footerBorder-color: #cccccc;
 $cenikSection-bgColor: #e7e7e7;
+$headerAfterElementColor: #bcd338;
 
 /* mobile frst */
 
@@ -14,7 +15,15 @@ $cenikSection-bgColor: #e7e7e7;
 .cenik-h1 {
   text-align: center;
   margin-bottom: 20px;
-  
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: $headerAfterElementColor;
+    width: 25px;
+    height: 2px;
+    margin: 0 auto;
+  }
 }
 
 .cenik{
@@ -89,6 +98,11 @@ $cenikSection-bgColor: #e7e7e7;
 
     .cenik-h1{
         margin-bottom: 55px;
+
+        &::after {
+            width: 30px;
+            height: 3px;
+          }
     }
 
     .cenik{
