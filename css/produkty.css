@@ -207,13 +207,16 @@ body {
     flex: 0 1 450px;
     padding: 0;
   }
+  .produkty-detail__card__text p {
+    margin-bottom: 10px;
+  }
 
   .light-detail, .pristresky-detail {
     background-color: #E7E7E7;
   }
 
   .classic-detail__text, .pricky-detail__text {
-    text-align: right;
+    text-align: left;
     order: 1;
     background-color: #ffffff;
   }

@@ -230,6 +230,10 @@ body{
 .produkty-detail__card__text{
     flex: 0 1 450px;
     padding: 0;
+
+    p{
+        margin-bottom: 10px;
+    }
 }
 
 .light-detail, .pristresky-detail{
@@ -238,7 +242,7 @@ body{
 }
 
 .classic-detail__text, .pricky-detail__text{
-    text-align: right;
+    text-align: left;
     order: 1;
     background-color: $default-bgColor;
 }
