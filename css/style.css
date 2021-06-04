@@ -204,6 +204,15 @@ body {
     margin-left: 25px;
   }
 
+  .menu__home::after {
+    content: "";
+    display: block;
+    background-color: #bcd338;
+    width: 25px;
+    height: 2px;
+    margin: 0 auto;
+  }
+
   .logo-img {
     height: 65px;
     margin-left: 15px;

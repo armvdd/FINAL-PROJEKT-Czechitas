@@ -217,6 +217,7 @@ body {
   .menu {
     display: block;
     margin-right: 25px;
+
     a {
       text-decoration: none;
       color: $default-fontColor;
@@ -227,6 +228,18 @@ body {
   .menu__tab {
     display: inline-block;
     margin-left: 25px;
+  }
+
+  .menu__home{
+
+    &::after {
+      content: "";
+      display: block;
+      background-color: $headerAfterElementColor;
+      width: 25px;
+      height: 2px;
+      margin: 0 auto;
+    }
   }
 
   .logo-img {

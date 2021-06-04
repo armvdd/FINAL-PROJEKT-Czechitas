@@ -3,6 +3,13 @@ $headerAfterElementColor: #bcd338;
 
 /* mobile frst */
 
+.menu__home{
+
+  &::after {
+      display: none;
+    }
+}
+
 .kontakty-socialBtn {
   width: 60px;
   margin-right: 10px;
@@ -82,6 +89,19 @@ $headerAfterElementColor: #bcd338;
 
 /* PC */
 @media screen and (min-width: 900px) {
+
+  .menu__kontakty{
+    
+    &::after {
+      content: "";
+      display: block;
+      background-color: $headerAfterElementColor;
+      width: 25px;
+      height: 2px;
+      margin: 0 auto;
+    }
+  }
+
   .kontakty-socialBtn {
     width: 80px;
   }

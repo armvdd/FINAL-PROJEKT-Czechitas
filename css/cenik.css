@@ -1,4 +1,8 @@
 /* mobile frst */
+.menu__home::after {
+  display: none;
+}
+
 .cenik-section {
   padding: 20px 0;
   background-color: #e7e7e7;
@@ -84,6 +88,15 @@
 }
 /* PC */
 @media screen and (min-width: 1200px) {
+  .menu__cenik::after {
+    content: "";
+    display: block;
+    background-color: #bcd338;
+    width: 25px;
+    height: 2px;
+    margin: 0 auto;
+  }
+
   .cenik-h1 {
     margin-bottom: 55px;
   }

@@ -11,6 +11,13 @@ $headerAfterElementColor: #bcd338;
 
 /* mobile frst */
 
+.menu__home{
+
+  &::after {
+      display: none;
+    }
+}
+
 .formular-section {
   margin: 0 auto;
   background-color: $formularSection-bgColor;
@@ -93,6 +100,19 @@ $headerAfterElementColor: #bcd338;
 /* PC */
 
 @media screen and (min-width: 900px) {
+
+    .menu__poptavka{
+
+        &::after {
+            content: "";
+            display: block;
+            background-color: $headerAfterElementColor;
+            width: 25px;
+            height: 2px;
+            margin: 0 auto;
+          }
+    }
+
   .formular-section {
     padding: 25px 0;
   }

@@ -8,6 +8,10 @@ body {
   font-size: 18px;
 }
 
+.menu__home::after {
+  display: none;
+}
+
 .produkty {
   margin-top: 80px;
   background-color: #ffffff;
@@ -128,6 +132,15 @@ body {
 }
 /* PC */
 @media screen and (min-width: 1200px) {
+  .menu__produkty::after {
+    content: "";
+    display: block;
+    background-color: #bcd338;
+    width: 25px;
+    height: 2px;
+    margin: 0 auto;
+  }
+
   .produkty {
     margin-top: 150px;
   }

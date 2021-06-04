@@ -1,4 +1,8 @@
 /* mobile frst */
+.menu__home::after {
+  display: none;
+}
+
 .formular-section {
   margin: 0 auto;
   background-color: #e7e7e7;
@@ -77,6 +81,15 @@
 }
 /* PC */
 @media screen and (min-width: 900px) {
+  .menu__poptavka::after {
+    content: "";
+    display: block;
+    background-color: #bcd338;
+    width: 25px;
+    height: 2px;
+    margin: 0 auto;
+  }
+
   .formular-section {
     padding: 25px 0;
   }
